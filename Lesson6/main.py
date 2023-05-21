@@ -28,7 +28,8 @@ limit = 10
 amount = int(input("Enter amount: "))
 check = Validation(amount, limit)
 try:
-    check.Check()
+    Validation(amount, limit).Check()
+    #check.Check()
 except ZeroDivisionError as zde:
     print(f"ZeroDivisionError: {zde}")
 except BuildingError as be:
